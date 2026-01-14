@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gadget Store | Berita Smartphone Terupdate</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-light: #ecf0f1;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1600') center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        /* News Grid */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .category {
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .news-content h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .meta-info {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">THE <span>GADGET</span> STORE</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Reviews</a>
+            <a href="#">Leaks</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Masa Depan di Genggaman Anda</h1>
+        <p>Berita terkini seputar teknologi mobile dan gadget tercanggih tahun 2026.</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Berita Smartphone Terupdate</h2>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1678911820864-e2c567c655d7?auto=format&fit=crop&q=80&w=800" alt="Smartphone Baru" class="news-image">
+                <div class="news-content">
+                    <span class="category">Flagship</span>
+                    <h3>Peluncuran Global Seri Terbaru: Sensor Kamera 200MP Kini Lebih Cerdas</h3>
+                    <p>Smartphone flagship terbaru tahun ini resmi diperkenalkan dengan fokus utama pada integrasi AI dalam fotografi malam...</p>
+                    <div class="meta-info">
+                        <span>15 Jan 2026</span>
+                        <span>Oleh: Admin</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1556656793-062ff9878258?auto=format&fit=crop&q=80&w=800" alt="Baterai Smartphone" class="news-image">
+                <div class="news-content">
+                    <span class="category">Teknologi</span>
+                    <h3>Revolusi Baterai Solid-State: Mengisi Daya Full Hanya dalam 5 Menit</h3>
+                    <p>Ilmuwan teknologi baru saja mengumumkan terobosan baterai yang diklaim akan mengubah cara kita menggunakan smartphone selamanya...</p>
+                    <div class="meta-info">
+                        <span>14 Jan 2026</span>
+                        <span>Oleh: Redaksi</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1592434110036-7168d307405e?auto=format&fit=crop&q=80&w=800" alt="Smartphone Lipat" class="news-image">
+                <div class="news-content">
+                    <span class="category">Rumor</span>
+                    <h3>Bocoran Desain Layar Lipat Tiga: Gadget atau Tablet?</h3>
+                    <p>Rumor mengenai perangkat dengan dua engsel (tri-fold) semakin menguat setelah paten terbaru dari produsen raksasa bocor di internet...</p>
+                    <div class="meta-info">
+                        <span>13 Jan 2026</span>
+                        <span>Oleh: Gadget Hunter</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Gadget Store. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">Portal Berita Elektronik Smartphone Terpercaya</p>
+    </footer>
+
+</body>
+</html>
